@@ -222,7 +222,7 @@ const PricingCard = ({
       >
         <div className="text-center text-white">
           <div className="text-lg font-black">
-            $
+            ₹
             <Counter from={previousPrice} to={currentPrice} />
           </div>
           <div className="text-[10px] font-bold">/{isYearly ? "yr" : "mo"}</div>
