@@ -26,44 +26,37 @@ export function FeaturesSectionWithCardGradient() {
 
 const grid = [
   {
-    title: "HIPAA and SOC2 Compliant",
+    title: "Real-Time Flood Alerts",
     description:
-      "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+      "Get instant notifications for rising water levels and potential flood risks in your area.",
   },
   {
-    title: "Automated Social Media Posting",
-    description:
-      "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+    title: "AI-Powered Predictions",
+    description: "Advanced ML forecasts for early warnings.",
   },
   {
-    title: "Advanced Analytics",
-    description:
-      "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+    title: "Interactive Risk Map",
+    description: "View colour-coded flood zones in your area.",
   },
   {
-    title: "Content Calendar",
-    description:
-      "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+    title: "Location-Based Insights",
+    description: "Personalized flood risk updates for your region.",
   },
   {
-    title: "Audience Targeting",
-    description:
-      "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+    title: "Emergency Resource Finder",
+    description: "Locate shelters, hospitals, and safe routes.",
   },
   {
-    title: "Social Listening",
-    description:
-      "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+    title: "Data-Driven Reports",
+    description: "Track rainfall, river levels, and flood trends.",
   },
   {
-    title: "Customizable Templates",
-    description:
-      "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+    title: "Voice Assistant Support",
+    description: "Hands-free flood updates and emergency SOS.",
   },
   {
-    title: "Collaboration Tools",
-    description:
-      "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+    title: "Offline Mode",
+    description: "Access vital flood info even without internet.",
   },
 ];
 
@@ -74,13 +67,26 @@ export const Grid = ({
   pattern?: number[][];
   size?: number;
 }) => {
-  const p = pattern ?? [
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-  ];
+  // Add uniqueness check when generating random coordinates
+  const generateUniquePattern = () => {
+    const used = new Set();
+    const pattern = [];
+
+    while (pattern.length < 5) {
+      const x = Math.floor(Math.random() * 4) + 7;
+      const y = Math.floor(Math.random() * 6) + 1;
+      const key = `${x}-${y}`;
+
+      if (!used.has(key)) {
+        used.add(key);
+        pattern.push([x, y]);
+      }
+    }
+    return pattern;
+  };
+
+  const p = pattern ?? generateUniquePattern();
+
   return (
     <div className="pointer-events-none absolute left-1/2 top-0  -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
       <div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-zinc-900/30 from-zinc-100/30 to-zinc-300/30 dark:to-zinc-900/30 opacity-100">

@@ -5,10 +5,9 @@ function Footer() {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
           <p className="mb-4">
-            We provide smart and efficient inventory stock management solutions
-            to help businesses track, manage, and optimize their stock
-            seamlessly. Our goal is to ensure accuracy, reduce waste, and
-            improve efficiency for businesses worldwide.
+            We are a smart flood management app that leverages AI, satellite
+            data, and IoT to provide real-time, hyperlocal flood predictions,
+            timely alerts, and evacuation routes.
           </p>
         </div>
         <div>
@@ -35,7 +34,7 @@ function Footer() {
                 href="#"
                 className="hover:text-white transition-colors duration-300"
               >
-                Services
+                Our Services
               </a>
             </li>
             <li>
@@ -43,7 +42,7 @@ function Footer() {
                 href="#"
                 className="hover:text-white transition-colors duration-300"
               >
-                Contact
+                Contact Us
               </a>
             </li>
           </ul>
@@ -74,13 +73,13 @@ function Footer() {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>Assam, India</p>
-          <p>Assam 10001</p>
-          <p>Email: info@inventrack.com</p>
+          <p>Guwahati 781014</p>
+          <p>Email: getourhelp@protex.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">
-        © 2025 InvenTrack. All rights reserved.
+        © 2025 PROTEX. All rights reserved.
       </p>
     </footer>
   );

@@ -7,7 +7,7 @@ const demoData = {
     url: "/",
     src: "/logo.svg", // Update with your actual logo path
     alt: "Protex",
-    title: "Protex",
+    title: "PROTEX",
   },
   menu: [
     {
@@ -19,22 +19,22 @@ const demoData = {
       url: "#",
       items: [
         {
-          title: "Password Manager",
-          description: "Securely store and manage your passwords",
+          title: "Interactive Map",
+          description: "View real-time flood risk in your area.",
           icon: <Shield className="size-5 shrink-0" />,
-          url: "/password-manager",
+          url: "/interactive-map",
         },
         {
-          title: "Account Security",
-          description: "Monitor and protect your online accounts",
+          title: "Emergency Resource Finder",
+          description: "Locate shelters, hospitals, and safe routes.",
           icon: <User className="size-5 shrink-0" />,
-          url: "/account-security",
+          url: "/emergency-resources",
         },
         {
-          title: "Documentation",
-          description: "Learn how to use Protex effectively",
+          title: "Offline Mode",
+          description: "Access PROTEX without internet.",
           icon: <Book className="size-5 shrink-0" />,
-          url: "/docs",
+          url: "/offline-mode",
         },
       ],
     },
@@ -59,6 +59,10 @@ const demoData = {
     {
       title: "Pricing",
       url: "/pricing",
+    },
+    {
+      title: "Community Feedbacks",
+      url: "/community-feedbacks",
     },
   ],
   mobileExtraLinks: [

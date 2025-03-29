@@ -25,7 +25,7 @@ export default function Home() {
       <PricingDemo />
       <div className="relative h-[600px] w-full my-52">
         <h2 className="text-2xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8">
-          Connected <span className="text-cyan-600">Globally</span>
+          Unified Across the <span className="text-cyan-600">Globe</span>
         </h2>
         <GlobeDemo />
       </div>

@@ -7,40 +7,40 @@ const demoData = {
   items: [
     {
       id: "faq-1",
-      question: "What is shadcnblocks?",
+      question: "How does PROTEX predict floods?",
       answer:
-        "shadcnblocks is a collection of ready-to-use block components built on top of shadcn/ui, designed to help you build beautiful websites faster.",
+        "PROTEX uses real-time weather data, AI-driven analysis, and historical flood patterns to provide accurate flood forecasts.",
     },
     {
       id: "faq-2",
-      question: "How do I install shadcnblocks?",
+      question: "Can I get alerts for specific locations?",
       answer:
-        "shadcnblocks components are designed to be copied and pasted into your project. Simply browse the components, click on the one you want to use, and copy the code directly into your project. This gives you full control over the code and allows for easy customization.",
+        "Yes! You can set your preferred locations and receive flood alerts based on real-time risk assessments.",
     },
     {
       id: "faq-3",
-      question: "Is shadcnblocks free to use?",
+      question: "Does the app work offline?",
       answer:
-        "Yes, shadcnblocks is open-source and free to use in both personal and commercial projects. You can customize and modify the blocks to suit your needs.",
+        "Yes, you can download maps, emergency contacts, and flood safety guides to access them without an internet connection.",
     },
     {
       id: "faq-4",
-      question: "Can I customize the blocks?",
+      question: "How accurate are the flood predictions?",
       answer:
-        "Absolutely! All blocks are built with customization in mind. You can modify the styling, content, and behavior through props and Tailwind CSS classes.",
+        "Our AI models are trained on large datasets and continuously updated to improve accuracy, but predictions may vary based on sudden weather changes.",
     },
     {
       id: "faq-5",
-      question: "Do you offer support?",
+      question: "Is the app free to use?",
       answer:
-        "Yes, we provide support through our GitHub repository where you can report issues, suggest features, or ask questions about implementation.",
+        "Yes, PROTEX is free to use, with almost all essential flood alerts and safety features available at no cost.",
     },
   ],
   supportHeading: "Still have questions?",
   supportDescription:
     "Can't find the answer you're looking for? Our support team is here to help with any technical questions or concerns.",
   supportButtonText: "Contact Support",
-  supportButtonUrl: "https://shadcnblocks.com",
+  supportButtonUrl: "https://protectwithprotex.com",
 };
 
 function Faq3Demo() {

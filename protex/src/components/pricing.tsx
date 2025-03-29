@@ -13,8 +13,8 @@ interface PricingPlan {
 const DEMO_PLANS: PricingPlan[] = [
   {
     name: "Starter",
-    monthlyPrice: 29,
-    yearlyPrice: 290,
+    monthlyPrice: 0,
+    yearlyPrice: 0,
     features: ["1 User", "10 Projects", "5GB Storage", "Basic Support"],
     isPopular: false,
 
